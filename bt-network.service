@@ -1,0 +1,11 @@
+[Unit]
+Description=Bluetoot PAN
+After=pan0.network
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bt-network -s nap pan0
+ExecStartPost=bt-adapter --set Discoverable 1
+
+[Install]
+WantedBy=multi-user.target

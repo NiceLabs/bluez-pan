@@ -1,0 +1,8 @@
+Package: bluez-pan
+Version: 0.1
+Section: utils
+Priority: optional
+Architecture: any
+Depends: bluez-tools
+Maintainer: septs <debian@septs.email>
+Description: Enable Bluetooth PAN Server
